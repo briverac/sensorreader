@@ -20,9 +20,9 @@ class PostDataController < ApplicationController
 
     #Si no se reciben datos se notifica
     else
-      Rails.logger.info ''
-      Rails.logger.info 'NO LLEGARON DATOS'
-      Rails.logger.info ''
+      logger.info ''
+      logger.info 'NO LLEGARON DATOS'
+      logger.info ''
       render :json => {
           :success => false,
           :message => 'No data collected'
