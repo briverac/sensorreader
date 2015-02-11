@@ -11,7 +11,7 @@ class PostDataController < ApplicationController
     render :json => {
          :success => true,
          :message => "Data collected"
-     }, :status => 422
+     }, :status => 200
     return
 
   end
