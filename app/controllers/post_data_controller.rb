@@ -6,7 +6,7 @@ class PostDataController < ApplicationController
     logger.info 'DATOS RECIBIDOS'
     logger.info ''
     logger.info params
-    puts ''
+    logger.info ''
 
     render :json => {
          :success => true,
