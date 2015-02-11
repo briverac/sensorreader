@@ -1,0 +1,2 @@
+class PostDataController < ApplicationController
+end
