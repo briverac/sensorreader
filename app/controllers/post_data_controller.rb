@@ -6,11 +6,11 @@ class PostDataController < ApplicationController
     #si se reciben los datos
     if !(params[:post_datum].to_s == "{}")
       #Se escriben los datos en el log
-      Rails.logger.warn ''
-      Rails.logger.warn 'DATOS RECIBIDOS'
-      Rails.logger.warn ''
-      Rails.logger.warn params[:post_datum]
-      Rails.logger.warn ''
+      puts ''
+      puts 'DATOS RECIBIDOS'
+      puts ''
+      puts params[:post_datum]
+      puts ''
 
       render :json => {
            :success => true,
@@ -20,9 +20,9 @@ class PostDataController < ApplicationController
 
     #Si no se reciben datos se notifica
     else
-      Rails.logger.warn ''
-      Rails.logger.warn 'NO LLEGARON DATOS'
-      Rails.logger.warn ''
+      puts ''
+      puts 'NO LLEGARON DATOS'
+      puts ''
       render :json => {
           :success => false,
           :message => 'No data collected'
